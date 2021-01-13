@@ -302,9 +302,8 @@ void hashSearch(HNODE** hash){
             break;
         if(choice != 1)
             continue;
-        printf("\nPassword: hunter\n");
-        strcpy(password, "hunter");
-        //scanf("%s", password); //If you want to search your password, delete 'hunter' , strcpy and //.
+        printf("\nPassword: ");
+        scanf("%s", password);
         HNODE* temp = hash[findHashPoint(password)];
         collisionCounter = 0;
         while(!compareStr(temp->str, password)){
