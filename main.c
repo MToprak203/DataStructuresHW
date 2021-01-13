@@ -152,7 +152,7 @@ void sort(char* fileName){
     mergeSort(passwords, 0, len-1, isAscending);
 
     printf("\nTop 10 passwords :\n\n");
-    for(int i = 0; i < 100; i++){
+    for(int i = 0; i < 10; i++){
         printf("%s\n", passwords[i]);
     }
 
